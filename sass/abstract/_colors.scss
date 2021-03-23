@@ -1,0 +1,18 @@
+$background-color: rgb(25, 23, 32);
+$primary-color: rgb(74, 68, 131);
+$secondary-color: rgb(236, 232, 232);
+
+$header-color: rgb(203, 203, 203);
+$btn-text: white;
+
+$glass-color: linear-gradient(
+  125deg,
+  rgba(
+    $color: rgb(183, 176, 185),
+    $alpha: 0.4,
+  ),
+  rgba(
+    $color: #a58bcb,
+    $alpha: 0.1,
+  )
+);

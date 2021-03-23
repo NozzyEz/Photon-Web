@@ -1,0 +1,14 @@
+@use '../abstract/' as *;
+
+footer {
+  @include flex(space-between, center, row);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  min-height: 5vh;
+  width: 100%;
+  background-color: $primary-color;
+  color: $secondary-color;
+  a {
+    color: $secondary-color;
+  }
+}

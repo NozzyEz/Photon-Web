@@ -1,0 +1,17 @@
+// Sizes
+$header1: 3.5rem;
+$header2: 5rem;
+$header3: 3rem;
+$header4: 2.5rem;
+$paragraph: 1.5rem;
+$inputs: 2rem;
+
+// Font Imports
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+}

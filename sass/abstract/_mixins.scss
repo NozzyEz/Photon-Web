@@ -1,0 +1,15 @@
+@use './colors' as *;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin glass() {
+  background: $glass-color;
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.2), 20px -20px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 2rem;
+}

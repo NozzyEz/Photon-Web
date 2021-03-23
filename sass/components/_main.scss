@@ -1,0 +1,71 @@
+@use '../abstract/' as *;
+main {
+  @include flex(center, center, column);
+}
+.gallery {
+  @include glass();
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(60rem, 1fr));
+  row-gap: 2rem;
+  column-gap: 2rem;
+  padding: 5rem;
+  .image-container {
+    @include glass();
+    @include flex(flex-start, center, column);
+    background-color: $secondary-color;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 5%;
+    p {
+      padding: 1rem;
+      align-self: start;
+      .photographer {
+        font-weight: bold;
+      }
+      .photographer-url {
+        font-size: $paragraph;
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+    img {
+      object-fit: cover;
+      margin: 1rem;
+      max-height: 70%;
+      max-width: 95%;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 20px 20px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 2rem;
+    }
+    a {
+      margin-top: auto;
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+  }
+}
+
+.nav-btn-grp {
+  margin: 2rem;
+  @include flex(center, center, row);
+  button {
+    margin: 1rem;
+    font-size: 2.5rem;
+  }
+  .prev-btn,
+  .next-btn {
+    background: none;
+    font-weight: bold;
+    &.inactive {
+      display: none;
+      pointer-events: none;
+    }
+  }
+
+  .current-btn {
+    pointer-events: none;
+  }
+}

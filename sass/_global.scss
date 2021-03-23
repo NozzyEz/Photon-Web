@@ -1,0 +1,46 @@
+@use './abstract/' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: $background-color;
+}
+
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4 {
+  font-size: $header4;
+}
+
+p {
+  font-size: $paragraph;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 0.7rem;
+  font-size: $inputs;
+  background: $primary-color;
+  color: $btn-text;
+  cursor: pointer;
+}

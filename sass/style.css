@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #191720;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 0.7rem;
+  font-size: 2rem;
+  background: #4a4483;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 15vh;
+}
+header h2 {
+  padding: 2rem;
+}
+header #logo {
+  color: #ece8e8;
+}
+header .search-form {
+  width: 30vw;
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header .search-form input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  width: 100%;
+  border: none;
+  border: 2px solid #4a4483;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery {
+  background: linear-gradient(125deg, rgba(183, 176, 185, 0.4), rgba(165, 139, 203, 0.1));
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.2), 20px -20px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 2rem;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(60rem, 1fr));
+  row-gap: 2rem;
+  column-gap: 2rem;
+  padding: 5rem;
+}
+.gallery .image-container {
+  background: linear-gradient(125deg, rgba(183, 176, 185, 0.4), rgba(165, 139, 203, 0.1));
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.2), 20px -20px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ece8e8;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  border-top-left-radius: 5%;
+}
+.gallery .image-container p {
+  padding: 1rem;
+  align-self: start;
+}
+.gallery .image-container p .photographer {
+  font-weight: bold;
+}
+.gallery .image-container p .photographer-url {
+  font-size: 1.5rem;
+}
+.gallery .image-container p .photographer-url a {
+  color: #4a4483;
+}
+.gallery .image-container img {
+  object-fit: cover;
+  margin: 1rem;
+  max-height: 70%;
+  max-width: 95%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 20px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+}
+.gallery .image-container a {
+  margin-top: auto;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.nav-btn-grp {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-btn-grp button {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+.nav-btn-grp .prev-btn,
+.nav-btn-grp .next-btn {
+  background: none;
+  font-weight: bold;
+}
+.nav-btn-grp .prev-btn.inactive,
+.nav-btn-grp .next-btn.inactive {
+  display: none;
+  pointer-events: none;
+}
+.nav-btn-grp .current-btn {
+  pointer-events: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  min-height: 5vh;
+  width: 100%;
+  background-color: #4a4483;
+  color: #ece8e8;
+}
+footer a {
+  color: #ece8e8;
+}
+
+/*# sourceMappingURL=style.css.map */
